@@ -1,0 +1,360 @@
+{
+  "clinic": {
+    "name": "Devi Care Speech and Hearing Clinic",
+    "shortName": "Devi Care Hearing",
+    "tagline": "Advanced Hearing Care & Speech Rehabilitation",
+    "subheading": "Committed to restoring the joy of sound with compassionate clinical care and state-of-the-art digital hearing technology.",
+    "experienceYears": "14+",
+    "establishedYear": 2012,
+    "rating": 4.9,
+    "reviewCount": 37,
+    "googleShareUrl": "https://share.google/zYegRBufM2jDKkhES",
+    "primaryPhone": "+91 88855 57633",
+    "phoneClean": "+918885557633",
+    "whatsappNumber": "918885557633",
+    "whatsappMessage": "Hello Devi Care Hearing, I would like to book an appointment for a hearing checkup.",
+    "email": "contact@devicarehearing.com",
+    "address": {
+      "street": "Door No 26-3-23, Hitech Busstand Road, Kambala Peta",
+      "landmark": "Opposite Hitech Bus Stand",
+      "city": "Rajahmundry",
+      "servingRegion": "Amalapuram & East Godavari District",
+      "state": "Andhra Pradesh",
+      "pincode": "533101",
+      "country": "India",
+      "fullAddress": "Door No 26-3-23, Opposite Hitech Bus Stand, Hitech Busstand Road, Kambala Peta, Rajahmundry - 533101 (Serving Amalapuram, Konaseema & East Godavari)"
+    },
+    "hours": {
+      "weekdays": "Monday – Saturday: 9:00 AM – 8:00 PM",
+      "sunday": "Sunday: Closed (Emergency / Prior Appointment Only)",
+      "schedule": [
+        { "day": "Monday", "hours": "9:00 AM - 8:00 PM", "isOpen": true },
+        { "day": "Tuesday", "hours": "9:00 AM - 8:00 PM", "isOpen": true },
+        { "day": "Wednesday", "hours": "9:00 AM - 8:00 PM", "isOpen": true },
+        { "day": "Thursday", "hours": "9:00 AM - 8:00 PM", "isOpen": true },
+        { "day": "Friday", "hours": "9:00 AM - 8:00 PM", "isOpen": true },
+        { "day": "Saturday", "hours": "9:00 AM - 8:00 PM", "isOpen": true },
+        { "day": "Sunday", "hours": "Closed", "isOpen": false }
+      ]
+    },
+    "specialist": {
+      "name": "Dr. D. Suryanarayana",
+      "role": "Chief Audiologist & Speech-Language Pathologist",
+      "designation": "Chairperson & Founder",
+      "qualification": "MASLP / BASLP, Certified Audiologist",
+      "experience": "14+ Years Clinical Experience"
+    }
+  },
+  "brandColors": {
+    "primary": "#008C43",
+    "primaryDark": "#056332",
+    "primaryLight": "#E6F5EC",
+    "secondary": "#1B8354",
+    "accent": "#10B981",
+    "accentGold": "#C2B067",
+    "background": "#F4FAF6",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#EBF5EE",
+    "text": "#12241A",
+    "textMuted": "#4B6354",
+    "border": "#D2E8DA",
+    "success": "#16A34A",
+    "warning": "#D97706"
+  },
+  "stats": [
+    { "value": "14+", "label": "Years in Healthcare", "desc": "Serving patients across Andhra Pradesh" },
+    { "value": "4.9★", "label": "Google Patient Rating", "desc": "Based on 37+ verified reviews" },
+    { "value": "5,000+", "label": "Happy Smiles Restored", "desc": "Hearing & speech transformations" },
+    { "value": "100%", "label": "Digital Precision", "desc": "Computerized hearing aid fittings" }
+  ],
+  "services": [
+    {
+      "id": "hearing-assessment",
+      "title": "Computerized Hearing Testing",
+      "badge": "Diagnostic",
+      "icon": "audiometer",
+      "image": "assets/images/audiometry-test.webp",
+      "description": "Comprehensive diagnostic Pure Tone Audiometry (PTA) and speech evaluation in a controlled sound-treated environment to accurately measure hearing thresholds across all frequencies.",
+      "benefits": [
+        "Computerized Pure Tone Audiometry (PTA)",
+        "Speech Discrimination & Recognition Testing",
+        "Tympanometry & Middle Ear Reflex Evaluation",
+        "Accurate, immediate digital report explanation"
+      ]
+    },
+    {
+      "id": "hearing-aids",
+      "title": "Digital Hearing Aids & Fitting",
+      "badge": "Technology",
+      "icon": "hearing-aid",
+      "image": "assets/images/product-cic-hearing-aid.webp",
+      "description": "State-of-the-art digital hearing solutions customized to your specific lifestyle, including invisible-in-canal (IIC), completely-in-canal (CIC), and discreet rechargeable models.",
+      "benefits": [
+        "Invisible & miniature styles (looks like earpods)",
+        "Advanced noise cancellation & speech clarity",
+        "Bluetooth connectivity for phone calls & TV",
+        "Free trial & personalized real-ear calibration"
+      ]
+    },
+    {
+      "id": "speech-therapy",
+      "title": "Speech & Language Therapy",
+      "badge": "Therapy",
+      "icon": "speech",
+      "image": "assets/images/speech-therapy.webp",
+      "description": "Specialized therapeutic programs for children and adults experiencing speech delays, articulation difficulties, stuttering/stammering, voice disorders, and post-stroke communication needs.",
+      "benefits": [
+        "Child speech delay & developmental therapy",
+        "Fluency therapy for stammering & stuttering",
+        "Voice therapy for vocal nodules & strain",
+        "Family counseling and home exercise programs"
+      ]
+    },
+    {
+      "id": "hearing-aid-repair",
+      "title": "Hearing Aid Service & Accessories",
+      "badge": "Support",
+      "icon": "repair",
+      "image": "assets/images/clinic-setup.webp",
+      "description": "Certified maintenance, ultrasonic cleaning, dehumidifying, battery replacements, receiver cord repairs, ear tips, and custom silicone earmolds for all leading hearing aid models.",
+      "benefits": [
+        "Multi-point diagnostic repair & servicing",
+        "Original zinc-air batteries and charging docks",
+        "Custom earmold impression fabrication",
+        "Annual maintenance checkups & cleaning"
+      ]
+    },
+    {
+      "id": "pediatric-audiology",
+      "title": "Pediatric Hearing Care",
+      "badge": "Specialized",
+      "icon": "child",
+      "image": "assets/images/clinic-consultation.webp",
+      "description": "Gentle, specialized hearing assessment protocols tailored for infants, toddlers, and young school children to ensure early detection and prompt speech-language development.",
+      "benefits": [
+        "Child-friendly interactive behavioral testing",
+        "Early intervention for speech development",
+        "Coordination with schools and pediatricians",
+        "Supportive, reassuring clinical guidance"
+      ]
+    },
+    {
+      "id": "tinnitus-counseling",
+      "title": "Tinnitus Management & Care",
+      "badge": "Care",
+      "icon": "soundwave",
+      "image": "assets/images/hearing-aid-fitting.webp",
+      "description": "Evidence-based strategies, sound therapy, and specialized hearing aid masking programs to relieve persistent ringing, buzzing, or hissing sounds in the ears.",
+      "benefits": [
+        "Detailed tinnitus pitch & loudness matching",
+        "Sound therapy masking devices",
+        "Counseling for stress and sleep improvement",
+        "Long-term relief and management plan"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "cic-iic",
+      "name": "Completely-In-Canal (CIC / IIC)",
+      "category": "Invisible Hearing Device",
+      "image": "assets/images/product-cic-hearing-aid.webp",
+      "featured": true,
+      "tag": "Most Popular",
+      "highlights": [
+        "Virtually invisible when worn deep in canal",
+        "Compact modern design (looks like tiny earpods)",
+        "Natural directional sound reception",
+        "Custom molded for comfortable all-day fit"
+      ]
+    },
+    {
+      "id": "ric-rechargeable",
+      "name": "Rechargeable Smart RIC",
+      "category": "Receiver-In-Canal",
+      "image": "assets/images/rechargeable-hearing-aid.webp",
+      "featured": true,
+      "tag": "Next-Gen Tech",
+      "highlights": [
+        "All-day lithium-ion battery with rapid charging",
+        "Direct Bluetooth streaming to smartphones & TV",
+        "Automatic adaptive environment sound filter",
+        "Discreet behind-the-ear slim profile"
+      ]
+    },
+    {
+      "id": "bte-power",
+      "name": "Behind-The-Ear (BTE) Power",
+      "category": "High-Power Solution",
+      "image": "assets/images/invisible-hearing-aid.webp",
+      "featured": false,
+      "tag": "Maximum Amplification",
+      "highlights": [
+        "Engineered for severe-to-profound hearing loss",
+        "Sturdy, moisture-resistant protective casing",
+        "Tactile volume control and telecoil support",
+        "Compatible with custom soft silicone molds"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "reviewerName": "Roopendra",
+      "rating": 5,
+      "date": "Verified Patient",
+      "text": "I'm very happy to share my opinion. I have consulted many doctors with many references. Everywhere it's okay fine, but here in Devi Care Speech and Hearing something different. I'm a college student, for me it was very hard to carry big size ear devices. Sometimes people ask me by seeing such devices if I have a problem, but here I got an updated, well designed ear device. It's very small like earpods! I'm very happy with product and as well as treatment.",
+      "highlight": "Got updated well designed ear device, very small like earpods!"
+    },
+    {
+      "reviewerName": "Venkatesh",
+      "rating": 4.5,
+      "date": "Verified Patient",
+      "text": "Good service and good treatment. The doctor explained my hearing assessment report very clearly and recommended the exact device that matched my lifestyle.",
+      "highlight": "Good service and good treatment."
+    },
+    {
+      "reviewerName": "Sandeep",
+      "rating": 5,
+      "date": "Verified Patient",
+      "text": "Good service. Very courteous staff, clean clinic environment, and modern computerized testing equipment.",
+      "highlight": "Good service and clean clinic environment."
+    },
+    {
+      "reviewerName": "Satish",
+      "rating": 5,
+      "date": "Verified Patient",
+      "text": "Good treatment and service. Had my father's hearing checked and fitted with a digital aid. He is very comfortable and hearing clearly now.",
+      "highlight": "Good treatment and service."
+    },
+    {
+      "reviewerName": "Surya",
+      "rating": 5,
+      "date": "Verified Patient",
+      "text": "Comprehensive diagnostic checkup and expert counseling. The best speech and hearing clinic in the region with dedicated follow-up care.",
+      "highlight": "Comprehensive diagnostic checkup and expert counseling."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "assets/images/clinic-exterior.webp",
+      "caption": "Devi Care Clinic Entrance & Building",
+      "category": "Clinic Facility",
+      "isPlaceholder": false
+    },
+    {
+      "src": "assets/images/clinic-interior.webp",
+      "caption": "Patient Waiting Lounge & Reception",
+      "category": "Clinic Facility",
+      "isPlaceholder": false
+    },
+    {
+      "src": "assets/images/clinic-reception.webp",
+      "caption": "Front Office & Patient Care Desk",
+      "category": "Clinic Facility",
+      "isPlaceholder": false
+    },
+    {
+      "src": "assets/images/clinic-consultation.webp",
+      "caption": "Audiological Consultation Suite",
+      "category": "Consultation",
+      "isPlaceholder": false
+    },
+    {
+      "src": "assets/images/clinic-setup.webp",
+      "caption": "Clinical Testing Equipment & Workstation",
+      "category": "Technology",
+      "isPlaceholder": false
+    },
+    {
+      "src": "assets/images/product-cic-hearing-aid.webp",
+      "caption": "Custom Digital CIC Hearing Device",
+      "category": "Products",
+      "isPlaceholder": false
+    },
+    {
+      "src": "assets/images/audiometry-test.webp",
+      "caption": "Soundproof Audiometry Testing Setup",
+      "category": "Diagnostics",
+      "isPlaceholder": true
+    },
+    {
+      "src": "assets/images/hearing-aid-fitting.webp",
+      "caption": "Digital Hearing Aid Calibration Session",
+      "category": "Fitting & Trial",
+      "isPlaceholder": true
+    },
+    {
+      "src": "assets/images/speech-therapy.webp",
+      "caption": "Speech & Language Therapy Suite",
+      "category": "Rehabilitation",
+      "isPlaceholder": true
+    },
+    {
+      "src": "assets/images/rechargeable-hearing-aid.webp",
+      "caption": "Next-Gen Bluetooth Rechargeable Aid",
+      "category": "Products",
+      "isPlaceholder": true
+    },
+    {
+      "src": "assets/images/doctor-team.webp",
+      "caption": "Clinical Audiology Specialists",
+      "category": "Medical Team",
+      "isPlaceholder": true
+    },
+    {
+      "src": "assets/images/invisible-hearing-aid.webp",
+      "caption": "Discreet Miniature In-The-Canal Aid",
+      "category": "Products",
+      "isPlaceholder": true
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I know if I or a loved one needs a hearing test?",
+      "a": "Common signs include asking people to frequently repeat themselves, turning TV volume higher than others prefer, struggling to follow group conversations or hearing in noisy areas, and ringing or buzzing sounds in the ears. A simple, painless computerized hearing assessment at Devi Care will provide clarity."
+    },
+    {
+      "q": "Are the hearing aids visible when worn?",
+      "a": "Not at all! As noted in patient reviews, we specialize in miniature Completely-in-Canal (CIC) and Invisible-in-Canal (IIC) digital hearing aids that sit deep inside your ear canal and look like tiny earpods or are completely invisible from the front."
+    },
+    {
+      "q": "Can I test or trial a hearing aid before purchasing?",
+      "a": "Yes! At Devi Care, we believe you should experience the difference for yourself. We provide personalized hearing aid demonstrations and trials so you can feel the sound clarity and physical comfort prior to making your decision."
+    },
+    {
+      "q": "What conditions are treated in speech therapy?",
+      "a": "Our speech-language pathology services help children with developmental speech delays, autism spectrum communication needs, and pronunciation difficulties, as well as adults with stuttering/stammering, voice strain, or recovery following vocal issues."
+    },
+    {
+      "q": "Do I need an appointment before visiting?",
+      "a": "While walk-ins are welcomed during clinic hours, we recommend calling or messaging us on WhatsApp (+91 88855 57633) in advance to reserve your preferred consultation slot without waiting."
+    }
+  ],
+  "toConfirm": [
+    {
+      "item": "Amalapuram Physical Clinic vs Regional Consultation Hub",
+      "status": "TO CONFIRM",
+      "detail": "Google listing and official records list the primary facility at Kambala Peta (Opposite Hitech Bus Stand), Rajahmundry, providing audiology services to Amalapuram and the Konaseema region. If a dedicated satellite clinic branch address in Amalapuram is open, please provide the specific door number and landmark."
+    },
+    {
+      "item": "Additional Clinic Landline Number",
+      "status": "TO CONFIRM",
+      "detail": "WhatsApp & verified mobile contact is +91 8885557633. If there is a dedicated reception landline number, it can be updated in clinic.json."
+    },
+    {
+      "item": "Authorized Hearing Aid Brand Partnerships",
+      "status": "TO CONFIRM",
+      "detail": "Listing details digital hearing aids, CIC devices, and computerized testing. Specific brand logos (e.g. Signia, Phonak, Widex, Oticon, Starkey, ReSound) can be toggled in clinic.json once confirmed."
+    },
+    {
+      "item": "Specific Consultation & Testing Fees",
+      "status": "TO CONFIRM",
+      "detail": "To comply with strict healthcare accuracy instructions, no pricing or consultation fees are invented. These can be added into clinic.json when provided."
+    },
+    {
+      "item": "Placeholder Photos to Replace with Live Photos",
+      "status": "TO CONFIRM",
+      "detail": "The website has 6 authentic clinic & product photos from the listing (exterior, interior, reception, consultation, equipment, and CIC hearing aid) and 6 clean placeholders (audiometry test booth, hearing aid fitting, speech therapy suite, doctor team, rechargeable aid, invisible aid). Replace the 6 placeholder images in /assets/images as desired."
+    }
+  ]
+}

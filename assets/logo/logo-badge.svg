@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 170" width="100%" height="100%">
+  <defs>
+    <filter id="badgeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#008C43"/>
+      <stop offset="100%" stop-color="#056332"/>
+    </linearGradient>
+    <linearGradient id="goldSwirl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C2B067"/>
+      <stop offset="100%" stop-color="#A38F44"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White Card Badge -->
+  <rect x="8" y="8" width="484" height="154" rx="16" fill="#FFFFFF" stroke="#E2EBE5" stroke-width="2" filter="url(#badgeShadow)"/>
+
+  <!-- Left: Ear Emblem -->
+  <g transform="translate(30, 32)">
+    <circle cx="50" cy="50" r="44" fill="url(#brandGrad)"/>
+    <path d="M 28 50 Q 28 42 33 37 Q 38 42 38 50 Q 38 58 33 63 Q 28 58 28 50 Z" fill="#FFFFFF" opacity="0.95"/>
+    <circle cx="21" cy="50" r="3.5" fill="#FFFFFF"/>
+    <path d="M 44 26 C 62 26, 73 38, 73 52 C 73 66, 62 70, 58 75 C 55 79, 56 82, 53 84 C 50 86, 44 86, 43 81 C 41 74, 46 72, 51 68 C 57 63, 62 60, 62 52 C 62 42, 54 34, 45 34 C 38 34, 34 39, 34 43" 
+          fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 47 43 C 54 44, 57 50, 56 56 C 55 60, 51 63, 47 62" 
+          fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 60 40 Q 66 48 60 58" fill="none" stroke="#E2F5EB" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Text: DEVI -->
+  <text x="155" y="96" 
+        font-family="'Inter', 'Outfit', 'Montserrat', Arial, sans-serif" 
+        font-size="64" 
+        font-weight="800" 
+        letter-spacing="3" 
+        fill="#008C43">
+    DEVI
+  </text>
+
+  <!-- Right: Medical Cross with Swirl -->
+  <g transform="translate(385, 48)">
+    <path d="M 25 2 A 28 28 0 0 1 56 32" fill="none" stroke="url(#goldSwirl)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 33 60 A 28 28 0 0 1 4 34" fill="none" stroke="url(#goldSwirl)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 12 12 A 25 25 0 0 1 50 20" fill="none" stroke="#008C43" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 48 48 A 25 25 0 0 1 10 40" fill="none" stroke="#008C43" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="30" cy="30" r="19" fill="#F0F8F3" stroke="#D2E8DA" stroke-width="1.5"/>
+    <path d="M 30 19 L 30 41 M 19 30 L 41 30" stroke="#008C43" stroke-width="5.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Bottom-Right: Care -->
+  <g transform="translate(250, 102)">
+    <text x="50" y="32" 
+          font-family="'Playfair Display', 'Outfit', Georgia, serif" 
+          font-style="italic"
+          font-size="34" 
+          font-weight="700" 
+          letter-spacing="1" 
+          fill="#056332">
+      Care
+    </text>
+    <path d="M -15 42 Q 60 30 115 44 Q 130 38 140 24" 
+          fill="none" stroke="#008C43" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M 10 49 Q 70 38 120 48" 
+          fill="none" stroke="#34A853" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+  </g>
+</svg>

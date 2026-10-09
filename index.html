@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devi Care Speech and Hearing Clinic | Hearing Aids & Speech Therapy</title>
+  <meta name="description" content="Devi Care Speech and Hearing Clinic offers advanced computerized hearing testing, invisible digital hearing aids, speech therapy, and personalized rehabilitation in Amalapuram and Rajahmundry.">
+  <meta name="keywords" content="Devi Care Hearing, Speech and Hearing Clinic Amalapuram, Hearing aids Rajahmundry, Invisible hearing aid, Speech therapy, Dr Suryanarayana, audiologist Amalapuram">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Devi Care Speech and Hearing Clinic">
+  <meta property="og:description" content="Compassionate hearing care, computerized audiometry, discreet digital hearing aids, and speech therapy with 14+ years healthcare expertise.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/clinic-exterior.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="assets/icons/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Ear Soundwave Intro Animation Experience (Interactive & Auto)
+       ======================================================================== -->
+  <div id="earIntroOverlay" class="ear-intro-overlay">
+    <div class="ear-intro-backdrop"></div>
+    <div class="ear-intro-content">
+      <div class="intro-ear-stage">
+        <!-- Radiating Sound Waves -->
+        <div class="sound-ripple ripple-1"></div>
+        <div class="sound-ripple ripple-2"></div>
+        <div class="sound-ripple ripple-3"></div>
+        
+        <!-- Central Glowing Medical Ear Emblem -->
+        <div class="intro-ear-circle">
+          <svg class="intro-ear-svg" viewBox="0 0 100 100" fill="none">
+            <!-- Frequency waves -->
+            <path d="M 22 50 Q 22 40 28 34 Q 34 40 34 50 Q 34 60 28 66 Q 22 60 22 50 Z" fill="#FFFFFF" opacity="0.95"/>
+            <circle cx="15" cy="50" r="4" fill="#FFFFFF"/>
+            <!-- Ear Contour -->
+            <path d="M 44 24 C 64 24, 76 37, 76 52 C 76 67, 63 72, 59 77 C 56 81, 57 84, 54 86 C 51 88, 44 88, 43 82 C 40 74, 46 72, 52 68 C 58 63, 63 60, 63 52 C 63 41, 54 33, 44 33 C 36 33, 32 39, 32 44" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round"/>
+            <!-- Inner Ear canal -->
+            <path d="M 47 43 C 55 44, 58 51, 57 57 C 56 61, 51 64, 47 63" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+            <!-- Emitted Waves inside ear -->
+            <path class="wave-pulse wave-p1" d="M 62 38 Q 69 48 62 60" stroke="#E2F5EB" stroke-width="3.5" stroke-linecap="round"/>
+            <path class="wave-pulse wave-p2" d="M 70 33 Q 79 48 70 65" stroke="#A7F3D0" stroke-width="3" stroke-linecap="round"/>
+            <path class="wave-pulse wave-p3" d="M 78 28 Q 89 48 78 70" stroke="#6EE7B7" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Live Dynamic Equalizer Bars -->
+      <div class="intro-equalizer">
+        <span class="eq-bar bar-1"></span>
+        <span class="eq-bar bar-2"></span>
+        <span class="eq-bar bar-3"></span>
+        <span class="eq-bar bar-4"></span>
+        <span class="eq-bar bar-5"></span>
+        <span class="eq-bar bar-6"></span>
+        <span class="eq-bar bar-7"></span>
+        <span class="eq-bar bar-8"></span>
+        <span class="eq-bar bar-9"></span>
+      </div>
+
+      <div class="intro-text-group">
+        <div class="intro-badge">DEVI CARE HEARING CLINIC</div>
+        <h2 class="intro-title">Restoring Sound Clarity & Speech Joy</h2>
+        <p class="intro-subtitle">Bringing every frequency into focus with 14+ years of audiology care in Amalapuram & Rajahmundry</p>
+      </div>
+
+      <div class="intro-actions">
+        <button class="btn btn-primary intro-enter-btn" onclick="closeEarIntro()">
+          <span>Enter Website</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ambient Acoustic & Floating Ears Background Layer -->
+  <div class="acoustic-bg-layer" aria-hidden="true">
+    <div class="floating-ear ear-bg-1">
+      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" fill="rgba(0, 140, 67, 0.05)"/><path d="M 44 26 C 62 26, 73 38, 73 52 C 73 66, 62 70, 58 75 C 55 79, 56 82, 53 84 C 50 86, 44 86, 43 81 C 41 74, 46 72, 51 68 C 57 63, 62 60, 62 52 C 62 42, 54 34, 45 34 C 38 34, 34 39, 34 43" stroke="rgba(0, 140, 67, 0.22)" stroke-width="4" stroke-linecap="round"/><path d="M 60 40 Q 66 48 60 58" stroke="rgba(16, 185, 129, 0.25)" stroke-width="3"/></svg>
+    </div>
+    <div class="floating-ear ear-bg-2">
+      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" fill="rgba(16, 185, 129, 0.05)"/><path d="M 44 26 C 62 26, 73 38, 73 52 C 73 66, 62 70, 58 75 C 55 79, 56 82, 53 84 C 50 86, 44 86, 43 81 C 41 74, 46 72, 51 68 C 57 63, 62 60, 62 52" stroke="rgba(0, 140, 67, 0.18)" stroke-width="4" stroke-linecap="round"/></svg>
+    </div>
+    <div class="floating-ear ear-bg-3">
+      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="45" fill="rgba(0, 140, 67, 0.04)"/><path d="M 44 26 C 62 26, 73 38, 73 52 C 73 66, 62 70, 58 75 C 55 79, 56 82, 53 84 C 50 86, 44 86, 43 81" stroke="rgba(0, 140, 67, 0.16)" stroke-width="4" stroke-linecap="round"/></svg>
+    </div>
+    <div class="floating-ear ear-bg-4">
+      <svg viewBox="0 0 100 100" fill="none"><path d="M 44 26 C 62 26, 73 38, 73 52 C 73 66, 62 70, 58 75 C 55 79, 56 82, 53 84 C 50 86, 44 86, 43 81 C 41 74, 46 72, 51 68 C 57 63, 62 60, 62 52" stroke="rgba(194, 176, 103, 0.25)" stroke-width="4" stroke-linecap="round"/></svg>
+    </div>
+    <div class="sound-wave-stream stream-1"></div>
+    <div class="sound-wave-stream stream-2"></div>
+  </div>
+
+  <!-- ========================================================================
+       Top Bar: Single-Line with Location • Phone Number • Hours • Status
+       ======================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span class="top-bar-item top-bar-loc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <span data-bind="servingRegion">Amalapuram & East Godavari District</span>
+      </span>
+      <span class="top-bar-divider">•</span>
+      <a href="tel:+918885557633" class="top-bar-item top-bar-phone" data-bind="phoneClean">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span data-bind="phone">+91 88855 57633</span>
+      </a>
+      <span class="top-bar-divider">•</span>
+      <span class="top-bar-item top-bar-hours">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span data-bind="weekdays">Monday – Saturday: 9:00 AM – 8:00 PM</span>
+      </span>
+      <span class="top-bar-divider">•</span>
+      <div id="liveStatusBadge" class="badge-status badge-open">
+        <span class="status-dot"></span> Clinic Open Now
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="Devi Care Hearing Homepage">
+        <img src="assets/logo/logo.svg" alt="Devi Care Hearing Logo" height="48" onerror="this.src='assets/logo/logo-badge.svg'">
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link">About Clinic</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#devices" class="nav-link">Hearing Aids</a></li>
+          <li><a href="#screener" class="nav-link">Hearing Check</a></li>
+          <li><a href="#gallery" class="nav-link">Clinic Photos</a></li>
+          <li><a href="#reviews" class="nav-link">Patient Reviews</a></li>
+          <li><a href="#location" class="nav-link">Visit & Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta-group">
+        <a href="tel:+918885557633" class="phone-quick-link" data-bind="phoneClean" aria-label="Call Devi Care">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span data-bind="phone">+91 88855 57633</span>
+        </a>
+        <button class="btn btn-primary" onclick="openAppointmentModal('General Hearing Consultation')">
+          Book Appointment
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-row">
+          <span class="section-tag">Trusted Audiology & Speech Care</span>
+          <a href="https://share.google/zYegRBufM2jDKkhES" target="_blank" rel="noopener noreferrer" class="google-trust-pill" data-bind="googleLink">
+            <svg class="google-g-icon" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+            <span class="rating-stars-badge">★★★★★</span>
+            <strong data-bind="rating">4.9★</strong>
+            <span data-bind="reviewCount">(37+ Reviews)</span>
+          </a>
+        </div>
+
+        <h1 class="hero-title">
+          Rediscover the Joy of Clear Sound with <span class="highlight">Devi Care</span>
+        </h1>
+        
+        <p class="hero-desc" data-bind="subheading">
+          Committed to restoring the joy of sound with compassionate clinical care and state-of-the-art digital hearing technology in Amalapuram and the Godavari region.
+        </p>
+
+        <div class="hero-cta-group">
+          <button class="btn btn-primary" onclick="openAppointmentModal('Hearing Consultation & Trial')">
+            Book Hearing Consultation
+          </button>
+          <button class="btn btn-sound-intro" onclick="playEarIntro()" title="Experience Ear & Sound Intro">
+            <span class="ear-icon-pulse">👂</span>
+            <span>Sound Experience</span>
+          </button>
+          <a href="#" class="btn btn-whatsapp" target="_blank" data-bind="whatsappLink">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.941-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.178.181-.077.355.101.173.45 0.742.965 1.202.663.591 1.222.774 1.395.86.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.072.043.419-.101.824z"/></svg>
+            WhatsApp Instant Chat
+          </a>
+          <a href="https://share.google/zYegRBufM2jDKkhES" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-bind="googleLink">
+            View Google Listing &rarr;
+          </a>
+        </div>
+
+        <div class="hero-trust-bullets">
+          <div class="trust-bullet-item">
+            <span class="bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Computerized Audiometry Testing</span>
+          </div>
+          <div class="trust-bullet-item">
+            <span class="bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Miniature CIC Aids (Looks like Earpods)</span>
+          </div>
+          <div class="trust-bullet-item">
+            <span class="bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Child & Adult Speech Therapy</span>
+          </div>
+          <div class="trust-bullet-item">
+            <span class="bullet-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Free Hearing Aid Demos & Trials</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Stack -->
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-main-image-wrap">
+            <img src="assets/images/clinic-exterior.webp" alt="Devi Care Speech and Hearing Clinic Facility" class="hero-main-image">
+            <div class="hero-image-overlay"></div>
+            <div class="hero-image-caption">
+              <h4 data-bind="name">Devi Care Speech and Hearing Clinic</h4>
+              <p>Opposite Hitech Bus Stand, Kambala Peta • Serving Amalapuram & Surrounding Region</p>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="hero-floating-badge badge-top-right">
+            <div class="float-badge-icon">🩺</div>
+            <div class="float-badge-text">
+              <strong>14+ Years</strong>
+              <span>Clinical Healthcare Experience</span>
+            </div>
+          </div>
+
+          <div class="hero-floating-badge badge-bottom-left">
+            <div class="float-badge-icon">🎧</div>
+            <div class="float-badge-text">
+              <strong>100% Digital</strong>
+              <span>Custom In-Canal Hearing Aids</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Stats Strip
+       ======================================================================== -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="stats-grid" id="statsContainer">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       About Clinic Section
+       ======================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-images-composition">
+        <img src="assets/images/clinic-interior.webp" alt="Devi Care Clinic Interior Lounge" class="about-main-img">
+        <div class="about-inset-card">
+          <h4>Patient-Centered Care</h4>
+          <p>Modern acoustic testing suite with quiet comfort and empathetic clinical guidance.</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-tag">About Devi Care Hearing</span>
+        <h2>Your Trusted Regional Center for Hearing & Speech Excellence</h2>
+        <p class="about-text">
+          With over 14 years dedicated to audiological healthcare, <strong>Devi Care Speech and Hearing Clinic</strong> serves individuals and families across Amalapuram, Rajahmundry, and the Konaseema delta. We believe that clear communication is vital to living with confidence and staying connected with your loved ones.
+        </p>
+
+        <!-- Doctor Profile Card -->
+        <div class="doctor-card">
+          <div class="doctor-avatar">👨‍⚕️</div>
+          <div class="doctor-info">
+            <h4 data-bind="docName">Dr. D. Suryanarayana</h4>
+            <div class="doc-role" data-bind="docRole">Chief Audiologist & Speech-Language Pathologist</div>
+            <div class="doc-qual" data-bind="docQual">MASLP / BASLP • 14+ Years Clinical Experience</div>
+          </div>
+        </div>
+
+        <ul class="about-features-list">
+          <li class="about-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div>
+              <strong>Computerized Diagnostics</strong>
+              <span>Precise Pure Tone & Speech Audiometry</span>
+            </div>
+          </li>
+          <li class="about-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div>
+              <strong>Miniature & Invisible Aids</strong>
+              <span>Deep-in-canal fitting with natural acoustics</span>
+            </div>
+          </li>
+          <li class="about-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div>
+              <strong>Speech Rehabilitation</strong>
+              <span>Tailored therapies for delays & fluency</span>
+            </div>
+          </li>
+          <li class="about-feature-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div>
+              <strong>Complete Aftercare</strong>
+              <span>Free trials, calibration, cleaning & repair</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Services Section
+       ======================================================================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clinical Services</span>
+        <h2>Comprehensive Hearing & Speech Solutions</h2>
+        <p>From initial computerized diagnostic testing to lifelong hearing device care and speech rehabilitation, we provide complete support tailored to your unique requirements.</p>
+      </div>
+
+      <div class="services-grid" id="servicesContainer">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Digital Hearing Devices Showcase
+       ======================================================================== -->
+  <section class="devices-section" id="devices">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Advanced Technology</span>
+        <h2>Next-Generation Digital Hearing Aids</h2>
+        <p>No more bulky, whistling devices. Our modern hearing aids are ultra-compact, discreet, and powered by intelligent digital sound processing.</p>
+      </div>
+
+      <div class="devices-grid" id="devicesContainer">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Hearing Self-Check Tool (Interactive Screener)
+       ======================================================================== -->
+  <section class="screener-section" id="screener">
+    <div class="container">
+      <div class="screener-card">
+        <div class="screener-intro">
+          <span class="section-tag">Quick Self-Assessment</span>
+          <h3>Quick 1-Minute Hearing Health Check</h3>
+          <p>Answer four simple questions about everyday listening situations to see if an in-clinic computerized evaluation is recommended for you or a family member.</p>
+        </div>
+
+        <div class="screener-questions-list">
+          <div class="screener-q-item" data-q="q1">
+            <span class="screener-q-text">1. Do family members or friends complain that you turn the TV or radio volume too loud?</span>
+            <div class="screener-options">
+              <button class="screener-btn-opt" data-val="yes">Yes</button>
+              <button class="screener-btn-opt" data-val="no">No</button>
+            </div>
+          </div>
+          <div class="screener-q-item" data-q="q2">
+            <span class="screener-q-text">2. Do you frequently ask people to repeat themselves, especially in restaurants or busy gatherings?</span>
+            <div class="screener-options">
+              <button class="screener-btn-opt" data-val="yes">Yes</button>
+              <button class="screener-btn-opt" data-val="no">No</button>
+            </div>
+          </div>
+          <div class="screener-q-item" data-q="q3">
+            <span class="screener-q-text">3. Do you feel that people often mumble or that you hear speech sounds but cannot clearly decipher words?</span>
+            <div class="screener-options">
+              <button class="screener-btn-opt" data-val="yes">Yes</button>
+              <button class="screener-btn-opt" data-val="no">No</button>
+            </div>
+          </div>
+          <div class="screener-q-item" data-q="q4">
+            <span class="screener-q-text">4. Do you experience ringing, hissing, or buzzing noises (tinnitus) in either or both ears?</span>
+            <div class="screener-options">
+              <button class="screener-btn-opt" data-val="yes">Yes</button>
+              <button class="screener-btn-opt" data-val="no">No</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="screener-result-box" id="screenerResult">
+          <h4 id="resultScore" style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px;"></h4>
+          <div id="resultMessage"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Clinic Photo Gallery
+       ======================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Inside The Clinic</span>
+        <h2>Clinic Facilities, Testing Suite & Devices</h2>
+        <p>Explore our clean, modern clinic environment, consultation chambers, diagnostic audiometry setup, and hearing aid technology.</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="gallery-filter-btn active" data-filter="all">All Photos</button>
+        <button class="gallery-filter-btn" data-filter="facility">Clinic Facility</button>
+        <button class="gallery-filter-btn" data-filter="consultation">Consultation & Team</button>
+        <button class="gallery-filter-btn" data-filter="products">Hearing Devices</button>
+        <button class="gallery-filter-btn" data-filter="diagnostics">Diagnostics & Therapy</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Patient Reviews Section
+       ======================================================================== -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Google Patient Reviews</span>
+        <h2>What Our Patients Say</h2>
+        <p>Read real experiences from individuals and families who received personalized hearing and speech care at Devi Care.</p>
+      </div>
+
+      <div class="reviews-grid" id="reviewsContainer">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+
+      <div class="reviews-footer-action">
+        <a href="https://share.google/zYegRBufM2jDKkhES" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-bind="googleLink">
+          <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/></svg>
+          Read All Reviews on Google Listing &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Operating Hours & Clinic Location Section
+       ======================================================================== -->
+  <section class="location-section" id="location">
+    <div class="container location-grid">
+      <!-- Clinic Hours & Address Card -->
+      <div class="location-info-card">
+        <h3>Clinic Timings & Address</h3>
+        
+        <div class="location-item">
+          <div class="location-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div class="location-text">
+            <h4>Address & Location</h4>
+            <p data-bind="address">Door No 26-3-23, Opposite Hitech Bus Stand, Hitech Busstand Road, Kambala Peta, Rajahmundry - 533101</p>
+            <p style="margin-top: 4px; color: var(--primary); font-weight: 600;">Landmark: Opposite Hitech Bus Stand</p>
+          </div>
+        </div>
+
+        <div class="location-item">
+          <div class="location-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div class="location-text">
+            <h4>Contact & WhatsApp</h4>
+            <p><a href="tel:+918885557633" style="color: var(--primary); font-weight: 700;" data-bind="phone">+91 88855 57633</a></p>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">Direct consultation booking & WhatsApp support</p>
+          </div>
+        </div>
+
+        <div class="location-item" style="margin-bottom: 0;">
+          <div class="location-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div class="location-text" style="width: 100%;">
+            <h4>Weekly Operating Hours</h4>
+            <ul class="hours-schedule-list" id="scheduleContainer">
+              <!-- Rendered dynamically from clinic.json -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outreach & Regional Care Card -->
+      <div class="outreach-card">
+        <div class="outreach-header">
+          <span class="section-tag">Regional Healthcare Access</span>
+          <h3>Serving Amalapuram & Konaseema Patients</h3>
+          <p>Providing specialized speech-language pathology and digital audiology services for individuals across the East Godavari region.</p>
+        </div>
+
+        <div class="outreach-body">
+          <div class="outreach-box">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              Convenient Regional Access
+            </h4>
+            <p>
+              Located directly opposite the Hitech Bus Stand in Kambala Peta, our clinic is easily accessible via direct regional buses and transport for patients arriving from <strong>Amalapuram</strong>, Ravulapalem, Kakinada, and nearby towns.
+            </p>
+          </div>
+
+          <div class="outreach-box">
+            <h4>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Prior Appointments Recommended
+            </h4>
+            <p>
+              To ensure zero wait time and dedicated time with Dr. D. Suryanarayana, we recommend booking your consultation in advance via phone or WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://share.google/zYegRBufM2jDKkhES" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-bind="googleLink" style="flex: 1;">
+            Open in Google Maps &rarr;
+          </a>
+          <button class="btn btn-secondary" onclick="openAppointmentModal('Amalapuram Patient Appointment')" style="flex: 1;">
+            Request Appointment Slot
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ Section
+       ======================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Help & Answers</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Helpful information about hearing testing, invisible hearing devices, speech therapy, and booking an appointment.</p>
+      </div>
+
+      <div class="faq-accordion" id="faqContainer">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Appointment Booking CTA Banner
+       ======================================================================== -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-box">
+        <div class="cta-banner-content">
+          <h2>Ready for Clear Hearing & Confident Speech?</h2>
+          <p>Book your diagnostic consultation at Devi Care Hearing. Experience gentle clinical care and advanced hearing aid trials tailored to your lifestyle.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <button class="btn btn-secondary" onclick="openAppointmentModal('General Hearing Consultation')">
+            Book Appointment Slot
+          </button>
+          <a href="#" class="btn btn-whatsapp" target="_blank" data-bind="whatsappLink">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.941-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.178.181-.077.355.101.173.45 0.742.965 1.202.663.591 1.222.774 1.395.86.173.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.072.043.419-.101.824z"/></svg>
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TO CONFIRM Notice Strip
+       ======================================================================== -->
+  <div class="to-confirm-strip">
+    <div class="container to-confirm-inner">
+      <div class="to-confirm-label">
+        <span>⚠️</span>
+        <span>Listing Data Verification: 5 items cataloged as "TO CONFIRM" for accuracy & owner approval.</span>
+      </div>
+      <button class="to-confirm-btn" onclick="openToConfirmModal()">
+        Review "TO CONFIRM" Checklist
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="assets/logo/logo-badge.svg" alt="Devi Care Hearing Clinic Logo" height="52">
+          </div>
+          <p class="footer-desc" data-bind="subheading">
+            Committed to restoring the joy of sound with compassionate clinical care and state-of-the-art digital hearing technology.
+          </p>
+          <div style="display: flex; gap: 8px;">
+            <a href="https://share.google/zYegRBufM2jDKkhES" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.84rem;" data-bind="googleLink">
+              ★ 4.9 on Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Clinical Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">Computerized Audiometry (PTA)</a></li>
+            <li><a href="#services" class="footer-link">Invisible & CIC Hearing Aids</a></li>
+            <li><a href="#services" class="footer-link">Speech & Language Therapy</a></li>
+            <li><a href="#services" class="footer-link">Pediatric Hearing Assessment</a></li>
+            <li><a href="#services" class="footer-link">Hearing Aid Repairs & Service</a></li>
+            <li><a href="#services" class="footer-link">Tinnitus Sound Counseling</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about" class="footer-link">About Dr. D. Suryanarayana</a></li>
+            <li><a href="#devices" class="footer-link">Digital Hearing Aids</a></li>
+            <li><a href="#screener" class="footer-link">1-Min Hearing Self-Check</a></li>
+            <li><a href="#gallery" class="footer-link">Clinic Photo Gallery</a></li>
+            <li><a href="#reviews" class="footer-link">Patient Testimonials</a></li>
+            <li><a href="#location" class="footer-link">Weekly Hours & Map</a></li>
+            <li><a href="javascript:void(0)" onclick="openToConfirmModal()" class="footer-link" style="color: #FBBF24;">"TO CONFIRM" Verification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit & Inquiries</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-bind="address">Door No 26-3-23, Opposite Hitech Bus Stand, Hitech Busstand Road, Kambala Peta, Rajahmundry - 533101</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:+918885557633" style="color: #FFFFFF; font-weight: 600;" data-bind="phone">+91 88855 57633</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span data-bind="weekdays">Mon – Sat: 9:00 AM – 8:00 PM</span>
+          </div>
+          <div style="margin-top: 16px;">
+            <a href="https://share.google/zYegRBufM2jDKkhES" target="_blank" rel="noopener noreferrer" style="color: #A3C5B1; font-size: 0.8rem; text-decoration: underline;" data-bind="googleLink">
+              Official Google Listing Link: share.google/zYegRBufM2jDKkhES
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Devi Care Speech and Hearing Clinic. All Rights Reserved.
+        </div>
+        <div>
+          Branded strictly in accordance with official DEVI Care identity & Google Listing data.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Appointment Booking Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="appointmentModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeAppointmentModal()" aria-label="Close modal">&times;</button>
+      <h3 style="margin-bottom: 6px; font-size: 1.6rem;">Book Consultation</h3>
+      <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 24px;">
+        Request your preferred hearing checkup or trial slot. We will confirm via WhatsApp or call.
+      </p>
+
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label class="form-label" for="apptName">Patient Full Name *</label>
+          <input type="text" id="apptName" class="form-input" placeholder="e.g. Ramesh Varma" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="apptPhone">Mobile / WhatsApp Number *</label>
+          <input type="tel" id="apptPhone" class="form-input" placeholder="e.g. 98480 12345" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="apptServiceSelect">Requested Service *</label>
+          <select id="apptServiceSelect" class="form-select">
+            <option value="Computerized Hearing Assessment">Computerized Hearing Testing (PTA)</option>
+            <option value="Invisible CIC Hearing Aid Trial">Invisible CIC Hearing Aid Trial</option>
+            <option value="Rechargeable Smart RIC Aid">Rechargeable Smart Hearing Aid</option>
+            <option value="Speech Therapy Consultation">Speech & Language Therapy</option>
+            <option value="Hearing Aid Repair & Servicing">Hearing Aid Repair & Servicing</option>
+            <option value="Pediatric Hearing Evaluation">Pediatric Hearing Evaluation</option>
+            <option value="General Consultation">General ENT / Audiology Consultation</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="apptDate">Preferred Date</label>
+          <input type="date" id="apptDate" class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="apptNotes">Notes or Specific Symptoms (Optional)</label>
+          <textarea id="apptNotes" class="form-textarea" rows="2" placeholder="Tell us if you have ringing ears, previous hearing aids, or prefer a morning/evening slot..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          Send Request via WhatsApp Instant Chat &rarr;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Lightbox Modal
+       ======================================================================== -->
+  <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+    <div class="modal-card lightbox-modal" onclick="event.stopPropagation()">
+      <button class="modal-close-btn" style="background: rgba(255,255,255,0.2); color: #fff;" onclick="closeLightbox()">&times;</button>
+      <img src="" alt="" id="lightboxImg" class="lightbox-img">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       "TO CONFIRM" Modal Checklist
+       ======================================================================== -->
+  <div class="modal-overlay" id="toConfirmModal">
+    <div class="modal-card" style="max-width: 680px;">
+      <button class="modal-close-btn" onclick="closeToConfirmModal()">&times;</button>
+      <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+        <span style="font-size: 1.6rem;">📋</span>
+        <h3 style="font-size: 1.5rem;">TO CONFIRM Checklist</h3>
+      </div>
+      <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 24px;">
+        To ensure strict healthcare accuracy without inventing credentials or prices, the following items from the Google Listing are cataloged for your review. You can edit any item directly in <code>/data/clinic.json</code>.
+      </p>
+
+      <div id="toConfirmList">
+        <!-- Rendered dynamically from clinic.json -->
+      </div>
+
+      <div style="margin-top: 24px; text-align: right;">
+        <button class="btn btn-primary" onclick="closeToConfirmModal()">
+          Close Checklist
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
