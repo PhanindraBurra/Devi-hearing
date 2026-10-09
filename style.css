@@ -609,11 +609,12 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.94);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-light);
   transition: var(--transition);
+  width: 100%;
 }
 
 .header-inner {
@@ -621,35 +622,40 @@ p {
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
-  gap: 24px;
+  width: 100%;
+  gap: 16px;
+  flex-wrap: nowrap;
 }
 
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .brand-logo img {
-  height: 48px;
+  height: 46px;
   width: auto;
+  max-width: 140px;
   object-fit: contain;
+  display: block;
+  border-radius: var(--radius-sm);
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: clamp(14px, 1.8vw, 26px);
+  gap: clamp(10px, 1.4vw, 22px);
   list-style: none;
   margin: 0 auto;
 }
 
 .nav-link {
-  font-size: clamp(0.88rem, 1vw, 0.95rem);
-  font-weight: 500;
+  font-size: 0.92rem;
+  font-weight: 600;
   color: var(--text);
-  padding: 8px 4px;
+  padding: 6px 4px;
   position: relative;
   white-space: nowrap;
 }
@@ -678,6 +684,13 @@ p {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+}
+
+.btn-header-appointment {
+  padding: 11px 22px;
+  font-size: 0.92rem;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
 }
 
 .btn-sound-intro {
@@ -2244,20 +2257,48 @@ p {
 /* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
-@media (max-width: 1100px) {
+@media (max-width: 1240px) {
   .nav-menu {
     gap: 14px;
   }
   .nav-link {
-    font-size: 0.86rem;
-  }
-  .phone-quick-link {
-    padding: 7px 14px;
-    font-size: 0.86rem;
+    font-size: 0.88rem;
   }
 }
 
 @media (max-width: 1024px) {
+  /* Switch nav menu to mobile dropdown at 1024px so links never push Book Appointment */
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    flex-direction: column;
+    padding: 24px;
+    box-shadow: var(--shadow-lg);
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    gap: 14px;
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    padding: 8px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border-light);
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -2315,31 +2356,33 @@ p {
     font-size: 0.68rem;
   }
 
-  /* Header on Mobile */
-  .nav-menu {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    right: 0;
-    background: #FFFFFF;
-    flex-direction: column;
-    padding: 24px;
-    box-shadow: var(--shadow-lg);
-    border-bottom: 1px solid var(--border);
-    transform: translateY(-150%);
-    transition: transform 0.3s ease;
+  /* Header compact sizing on Tablet & Mobile */
+  .header-inner {
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 8px;
+    flex-wrap: nowrap !important;
   }
 
-  .nav-menu.open {
-    transform: translateY(0);
+  .brand-logo img {
+    height: 40px;
+    max-width: 120px;
+  }
+
+  .header-cta-group {
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .btn-header-appointment {
+    padding: 8px 14px;
+    font-size: 0.84rem;
   }
 
   .mobile-menu-btn {
-    display: flex;
-  }
-
-  .phone-quick-link {
-    display: none !important;
+    width: 36px;
+    height: 36px;
+    padding: 7px;
   }
 
   .services-grid, .devices-grid, .reviews-grid, .location-grid {
